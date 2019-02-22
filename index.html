@@ -1,271 +1,193 @@
+
 <!DOCTYPE html>
 <html>
-<title>Thom Lai</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-light-grey">
+<body class="w3-black">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="avatar.png" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2 style="color: #FFFFFF;">LAI THI HONG THOM</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Quality Control Engineer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Binh Thanh District, HCM</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>laithihongthom@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0365 060 016</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Visit me: <a href="https://thomlai.github.io" target="_blank">https://thomlai.github.io</a></p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
-          <p><b>Testing skills</b></p>
-          <p>Writing testcase, test scenarios</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Functional & Non-Functional testing</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
-              <div class="w3-center w3-text-white">90%</div>
-            </div>
-          </div>
-          <p>Bug report</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-          </div>
-          <p>Web Application</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-          </div>
-          <p>Mobile Application</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">75%</div>
-          </div>
-          <p>API</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">70%</div>
-          </div>
-          <p>Responsive design testing</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">70%</div>
-          </div>
-          <p>Automation testing tools</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">60%</div>
-          </div>
-          <br>
-          <p><b>Tracking tools</b></p>
-          <p>GIT</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>TestRail</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
-              <div class="w3-center w3-text-white">90%</div>
-            </div>
-          </div>
-          <p>JIRA</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
-          </div>
-
-          <br>
-			<hr>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>Vietnamese</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
-          </div>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
-          </div>
-          <hr>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-heart fa-fw w3-margin-right w3-text-teal"></i>Hobbies and interests</b></p>
-          <p><i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>Reading book</p>
-          <p><i class="fa fa-search fa-fw w3-margin-right w3-text-teal"></i>Learn about QC technology</p>
-          <p><i class="fa fa-female fa-fw w3-margin-right w3-text-teal"></i>Walking</p>
-		<hr>
-        </div>
-	      
-      </div>
-	    <br>
-    <!-- End Left Column -->	    
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-star fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Objective</h2>
-            <div class="w3-container">
-                <p>I will become a good senior Quality Control, who bring to the best and most satisfied products for everyone.</p>
-            </div>
-      </div>
-<div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Self-Study</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Posts and telecommunications institute of technology Ho Chi Minh (PTIT HCM)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2017</h6>
-          <p>Bachelor Degree, Software Engineering - GPA: 2.93/4</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>JANETO ICT</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Otc 2015 - Now</h6>
-        </div>
-      </div>
-<br>    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Fullstack developer - Trainee / JANETO ICT</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Otc 2015 - June 2016</h6>
-          <p>I learnt about web (including back-end and front-end), managing source with Git and took part in company products.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Fullstack developer - Staff / JANETO ICT</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2016 - Dec 2016</h6>
-          <p>I worked with .Net, AngularJS and NodeJS in company's products like:</p>
-          <style>
-            table {
-              font-family: arial, sans-serif;
-              border-collapse: collapse;
-              width: 100%;
-            }
-
-            td, th {
-              border: 1px solid #dddddd;
-              text-align: left;
-              padding: 8px;
-            }
-
-            tr:nth-child(even) {
-              background-color: #dddddd;
-            }
-          </style>
-          <table>
-            <tr>
-              <th>Project Name</th>
-              <th>Duration</th>
-              <th>Techniques/Jobs</th>
-            </tr>
-            <tr>
-              <td>Training Tool</td>
-              <td>4 Months</td>
-              <td>A private product to manage training freshers (AngularJS)</td>
-            </tr>
-            <tr>
-              <td>One Public Services (Dich vu cong truc tuyen)</td>
-              <td>3 Months</td>
-              <td>.Net</td>
-            </tr>
-            <tr>
-              <td>Big guy website</td>
-              <td>1 Months</td>
-              <td>HTML, CSS, Javascript</td>
-            </tr>
-          </table>
-          <hr>
-        </div>
-	      
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>QC - Staff/ JANETO ICT</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Sep 2018</h6>
-          <p>I worked with manual testing, automation testing and use TestRail tool in company's products like:</p><br>
-          <table>
-            <tr>
-              <th>Project Name</th>
-              <th>Duration</th>
-              <th>Techniques/Jobs</th>
-            </tr>
-            <tr>
-              <td>WareHouse Web Application</td>
-              <td>2 Years</td>
-              <td> <li>Respond to reports from customers</li>
-              	   <li>Write Document, Test Case, Functional, Non-Functional testing and bug report</li>
-                   <li>A hands-on training on software testing and how to use TestRail</li></td>
-            </tr>
-            <tr>
-              <td>QQEnglish Web application</td>
-              <td>6 Months</td>
-              <td><li>Write Test Case, Functional, Non-Functional testing and e2e automation testing</li>
-              	  <li>Bugs report</li></td>
-            </tr>
-            <tr>
-              <td>Redwood Web application</td>
-              <td>6 Months</td>
-              <td><li>Write Test Case, Functional, Non-Functional testing and e2e automation testing</li>
-              	  <li>Bugs report</li></td>
-            </tr>
-            <tr>
-              <td>Citizenaid Mobile application</td>
-              <td>6 Months</td>
-              <td><li>Functional, Non- Functional testing and bug report</li></td>
-            </tr>
-            <tr>
-              <td>Wow! Kid  Mobile application</td>
-              <td>6 Months</td>
-              <td><li>Write Test Case, Functional, Non-Functional testing and bug report</li></td>
-            </tr>
-            <tr>
-              <td>PinPlus Mobile application</td>
-              <td>1 Year</td>
-              <td><li>Write Test Case, Functional, Non-Functional testing, create TestRuns and Test Report</li>
-              	  <li>Bugs report</li></td>
-            </tr>
-<!-- 	    <tr>
-              <td>Shareholders Meetings Web & Mobile application</td>
-              <td>6 Months</td>
-		   <td><li>Test report</li>
-		      <li>Write Document, Test Case, Functional, Non-Functional testing and bug report</li></td>
-            </tr> -->
-            <tr>
-              <td>MyKolor Web & Mobile application</td>
-              <td>11 Months</td>
-		   <td><li>Team Leader</li>
-		      <li>Write Document, Test Case, Functional, Non-Functional testing and bug report</li></td>
-            </tr>
-          </table>
-		<hr>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
-  
-  <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-</footer>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Thom Lai.</h1>
+    <p>QC Engineer.</p>
+    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I’m Lai Thi Hong Thom. I’m 26 years old and I’m single. I was grew up in Dak Nong, but I have been working in HCM City for 7 years. I graduated from Posts and Telecommunications Institute of Technology University and got 1,5 years experience in developer and 2 years for QC position. I’m active. I like dealing with difficult problems and challenged issues. I’m rather serious in work and can work under high pressure.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Manual Testing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Automation Testing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Tools</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3+</span><br>
+        Experience
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">25+</span><br>
+        Projects Done
+      </div>
+      
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Job</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">JANETO company</li>
+          <li class="w3-padding-16">Developer & QC engineer</li>
+          <li class="w3-padding-16">Automation & Manual Testing</li>
+          <li class="w3-padding-16">Web & Mobile Application</li>
+          <li class="w3-padding-16">21 Project Done</li>
+          <li class="w3-padding-16">
+            <h2>36</h2>
+            <span class="w3-opacity">months</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">FORMOS company</li>
+          <li class="w3-padding-16">QC engineer</li>
+          <li class="w3-padding-16">Manual Testing</li>
+          <li class="w3-padding-16">Web Application</li>
+          <li class="w3-padding-16">4+ Project Done</li>
+          <li class="w3-padding-16">
+            <h2>6+</h2>
+            <span class="w3-opacity">months</span>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Thanh Le.</span> CEO at JANETO Company.</p>
+    <p>Email: lebaothanh@janeto.com</p><br>
+    
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Trung Huynh.</span> CEO at FORMOS Company.</p>
+    <p>Email: trung.huynh@formos.com</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Go Vap, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (+86)365 060 016</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: laithihongthom@gmail.com</p>
+    </div><br>
+    
+  <!-- End Contact Section -->
+  </div>
+  
+
+<!-- END PAGE CONTENT -->
+</div>
 
 </body>
 </html>
+
